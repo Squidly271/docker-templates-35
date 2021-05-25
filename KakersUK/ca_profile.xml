@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://cdn.statically.io/gh/KakersUK/docker-templates/master/KakersUK/images/avatar.jpg</Icon>
+  <Profile>
+    Hey there, I'm new to both unRAID and Docker... what could possibly go wrong?
+  </Profile>
+  <DonateLink>https://www.paypal.me/jamierobertscott</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+</Maintainer>

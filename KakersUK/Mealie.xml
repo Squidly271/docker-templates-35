@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Mealie</Name>
+  <Repository>hkotel/mealie</Repository>
+  <Registry>https://hub.docker.com/r/hkotel/mealie/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/hay-kot/mealie/issues</Support>
+  <Project>https://hay-kot.github.io/mealie/</Project>
+  <Overview>A self-hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. </Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:9925]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.statically.io/gh/KakersUK/docker-templates/master/KakersUK/images/Mealie.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1621902361</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A self-hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9925</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/mealie</HostDir>
+      <ContainerDir>/app/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">9925</Config>
+  <Config Name="Host Path 1" Target="/app/data" Default="" Mode="rw" Description="Container Path: /app/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mealie</Config>
+</Container>
